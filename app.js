@@ -27,9 +27,4 @@ app.get('/', (req, res) => {
 app.use('/wiki', wikiRouter);
 app.use('/user', userRouter);
 
-app.get('/', (req, res) => { //Main Page
-   res.send(layout(''));
-})
-
-
 const PORT = 3000; //Calls Port
